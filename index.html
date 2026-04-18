@@ -55,7 +55,42 @@ body {
     box-shadow:0 0 20px purple;
     cursor:pointer;
 }
+.lux-menu {
+    background: linear-gradient(to right, #1a0026, #2a003f, #1a0026);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+}
 
+.lux-menu a {
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.lux-menu a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px gold, 0 0 20px gold;
+}
+
+.lux-menu a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    height: 20px;
+    width: 1px;
+    background: gold;
+    opacity: 0.5;
+}
 /* HEADER */
 .header {
     height:400px;
@@ -117,6 +152,15 @@ body {
 <section class="hero">
     <img src="Banner.jpg" alt="Mistress Grace Banner" class="hero-img">
 </section>
+    <nav class="lux-menu">
+    <a href="#"><span>👑</span> HOME</a>
+    <a href="#"><span>💎</span> TRIBUTE</a>
+    <a href="#"><span>🎁</span> WISHLIST</a>
+    <a href="#"><span>🔒</span> RULES</a>
+    <a href="#"><span>✉️</span> CONTACT</a>
+</nav>
+
+<div class="ornament"></div>
 <!-- HEADER -->
 
 
