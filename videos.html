@@ -35,3 +35,18 @@
 </div>
 
 </div>
+<script>
+function checkPW() {
+    var pw = document.getElementById("pw").value;
+
+    if(pw === "grace123") {
+        document.getElementById("videoLock").style.display = "none";
+        document.getElementById("videoContent").style.display = "block";
+    } else {
+        alert("Falsches Passwort");
+    }
+}
+</script>
+
+</body>
+</html>
