@@ -1,83 +1,14 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Videos – Mistress Grace</title>
+<!-- Passwort Screen -->
+<div id="videoLock" class="lock-screen">
+    <h2>🔒 Geschützter Bereich</h2>
+    <p>Zugang nur für würdige.</p>
+    <input type="password" id="pw" placeholder="Passwort">
+    <br>
+    <button onclick="checkPW()">Enter</button>
+</div>
 
-<style>
-body {
-    margin:0;
-    font-family: Arial;
-    background: radial-gradient(circle at top, #1a0033, #000);
-    color:white;
-}
-
-/* Banner */
-.hero img {
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-/* Menü */
-.lux-menu {
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:15px;
-    background:#2a003f;
-    border-top:2px solid gold;
-    border-bottom:2px solid gold;
-}
-
-.lux-menu a {
-    color:gold;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* Titel */
-.title {
-    text-align:center;
-    margin-top:40px;
-    font-size:40px;
-    color:gold;
-}
-
-/* Video Box */
-.video-box {
-    max-width:800px;
-    margin:40px auto;
-    padding:20px;
-    border:1px solid gold;
-    border-radius:10px;
-    text-align:center;
-    background:rgba(0,0,0,0.5);
-}
-
-/* Vorschau */
-.video-box img {
-    width:100%;
-    border-radius:10px;
-}
-
-/* Button */
-.video-btn {
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    background:linear-gradient(45deg, gold, #ffcc00);
-    color:black;
-    font-weight:bold;
-    text-decoration:none;
-    border-radius:8px;
-}
-</style>
-
-</head>
-
-<body>
+<!-- Inhalt (versteckt) -->
+<div id="videoContent" style="display:none;">
 
 <!-- Banner -->
 <section class="hero">
@@ -96,23 +27,11 @@ body {
 
 <h1 class="title">Videos</h1>
 
-<!-- Video 1 -->
+<!-- Video Box -->
 <div class="video-box">
     <img src="preview.jpg">
     <h3>Exklusives Video</h3>
-    <p>Zugang nur nach Freischaltung.</p>
-
-    <a href="#" class="video-btn">🔒 Freischalten</a>
+    <p>Nur für ausgewählte.</p>
 </div>
 
-<!-- Video 2 -->
-<div class="video-box">
-    <img src="preview.jpg">
-    <h3>Premium Content</h3>
-    <p>Nur für würdige.</p>
-
-    <a href="#" class="video-btn">🔒 Zugang erhalten</a>
 </div>
-
-</body>
-</html>
