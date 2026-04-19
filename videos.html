@@ -1,4 +1,90 @@
-<!-- Passwort Screen -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos – Mistress Grace</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background: radial-gradient(circle at top, #1a0033, #000);
+    color:white;
+}
+
+/* Passwort Screen */
+.lock-screen {
+    text-align:center;
+    margin-top:150px;
+}
+
+.lock-screen input {
+    padding:10px;
+    margin:10px;
+}
+
+.lock-screen button {
+    padding:10px 20px;
+    background:gold;
+    border:none;
+    cursor:pointer;
+}
+
+/* Banner */
+.hero img {
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/* Menü */
+.lux-menu {
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+    background:#2a003f;
+    border-top:2px solid gold;
+    border-bottom:2px solid gold;
+}
+
+.lux-menu a {
+    color:gold;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Titel */
+.title {
+    text-align:center;
+    margin-top:40px;
+    font-size:40px;
+    color:gold;
+}
+
+/* Video Box */
+.video-box {
+    max-width:800px;
+    margin:40px auto;
+    padding:20px;
+    border:1px solid gold;
+    border-radius:10px;
+    text-align:center;
+    background:rgba(0,0,0,0.5);
+}
+
+.video-box img {
+    width:100%;
+    border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Passwort -->
 <div id="videoLock" class="lock-screen">
     <h2>🔒 Geschützter Bereich</h2>
     <p>Zugang nur für würdige.</p>
@@ -7,7 +93,7 @@
     <button onclick="checkPW()">Enter</button>
 </div>
 
-<!-- Inhalt (versteckt) -->
+<!-- Inhalt -->
 <div id="videoContent" style="display:none;">
 
 <!-- Banner -->
@@ -27,7 +113,6 @@
 
 <h1 class="title">Videos</h1>
 
-<!-- Video Box -->
 <div class="video-box">
     <img src="preview.jpg">
     <h3>Exklusives Video</h3>
@@ -35,6 +120,8 @@
 </div>
 
 </div>
+
+<!-- SCRIPT -->
 <script>
 function checkPW() {
     var pw = document.getElementById("pw").value;
